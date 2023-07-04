@@ -57,7 +57,7 @@ export const About: React.FC = () => {
           </div>
           <div>
             <p style={{ marginTop: "10px" }}>
-              I'm a software engineer specialised in frontend and backend
+              I&apos;m a software engineer specialised in frontend and backend
               development for complex scalable web apps. I have rich experience
               in application development and testing, development team
               management and project management.

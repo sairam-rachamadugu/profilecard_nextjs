@@ -74,10 +74,7 @@
     transform: scaleX(1);
     color: aliceblue;
 }
-.footer{
-    position: relative;
-    bottom: 0;
-}
+
 @media (max-width:700px){
     .layout_header a{
         display: none;

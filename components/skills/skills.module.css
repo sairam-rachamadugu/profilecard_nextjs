@@ -1,0 +1,41 @@
+.card{
+    position: relative;
+    max-width: 900px;
+    margin: auto; 
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.title{
+    position: relative;
+    color: black;
+    margin: 30px 0px;
+}
+.title::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color:#21ba45;
+    top: 0px;
+    left: -10px;
+}
+.skillsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill{
+    padding: 4px 7px;
+    background-color: #21ba45;
+    border-radius: 0.28571429rem;
+    margin: 5px 3px 0;
+}
+@media(max-width:600px) {
+  .title{
+    margin: 30px 20px;
+  } 
+  .skillsList{
+    margin: 0px 20px;
+  } 
+}

@@ -1,0 +1,10 @@
+.para{
+    margin: auto;
+    max-width: 900px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-weight: 300;                                                                                                                                                                                                                                                                                          
+    font-size: 1em;
+    line-height: 1.38em;
+}

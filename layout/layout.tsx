@@ -24,9 +24,9 @@ export default function DashboardLayout({
       </header>
 
       <main className={styles.main}>{children}</main>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <SocialLinks />
-      </footer>
+      </footer> */}
     </>
   );
 }

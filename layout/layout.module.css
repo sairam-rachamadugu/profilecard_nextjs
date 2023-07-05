@@ -27,16 +27,11 @@
     background-color: rgba(0,0,0,.1);
     border-radius: 10px;
 }
-.layout_header a:hover{
- 
-    cursor: pointer;
-    color: aliceblue;
-}
+
 .layout_header a:hover:before{
     border-radius: 10px;
     transform-origin: left;
     transform: scaleX(1);
-    
 }
 
 .main{
@@ -55,10 +50,16 @@
     opacity: .8;
     background-color: var(--sweep-color);
     transform: scaleX(0);
+    color: white;
     transform-origin: left;
     transition: transform 0.5s ease;
-}   
-.divider {
+} 
+.layout_header a:hover{
+    
+    cursor: pointer;
+    color: white;
+}  
+/* .divider {
     position: fixed;
     border-top: 1px solid rgba(34, 36, 38, 0.15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -66,20 +67,71 @@
     top:64px;
     line-height: 1;
     height: 0;
-}
+} */
 .layout_header a.active {
     border-radius: 10px;
     background-color: var(--sweep-color);
     opacity: 1;
     transform: scaleX(1);
-    color: aliceblue;
+    color: white;
+}
+.mobileHeader{
+    display: none;
 }
 
 @media (max-width:700px){
-    .layout_header a{
+    .desktopHeader{
         display: none;
     } 
-    .layout_header a:nth-child(1){
+    /* .layout_header a:nth-child(1){
     display: block;
+    } */
+    .layout_header{
+        position: fixed;
+        width: 100%;
+        
     }
+    .main{
+        margin-top: 100px;
+    }
+    .mobileHeader{
+
+        display: grid;
+        background-color: transparent;
+        width:100%;
+        text-align: center;
+        overflow: hidden;
+        grid-template-rows: 1fr repeat(6,0);
+    }
+    .hamber{
+        margin: 20px;
+   
+   }
+   .hamber:hover{
+       cursor: pointer;
+   }
+   .mobileHeader.active{
+
+    background-color: white;
+    grid-template-rows: 1fr repeat(6,0fr);
+   }
+   .mobileHeader.active a{
+    margin: 0;
+    border-radius: 0;
+   }   
+   .mobileHeader.active a:before{
+    z-index: 0;
+    border-radius: 0;
+   }
+   .layout_header a:hover{
+    color:var(--sweep-color); ;
+    opacity: 1;
+   }
+   .mobileHeader.active a:hover::before{
+    transform-origin: left;
+    transform: scaleX(.01);
+   }
+
+   
+
 }

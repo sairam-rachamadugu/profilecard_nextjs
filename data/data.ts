@@ -25,10 +25,10 @@ export const headerData:headerLinks[]=[
         path:"/info/experience",
     },
     
-    {
-        title:"Projects",
-        path:"/info/projects",
-    }
+    // {
+    //     title:"Projects",
+    //     path:"/info/projects",
+    // }
 ]
 
 export const soical_links:socialLinks[]=[

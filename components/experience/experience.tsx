@@ -5,7 +5,7 @@ export const Experience: React.FC = () => {
   return (
     <section>
       <div className={styles.para}>
-        <ul>
+        <ul className={styles.ulList}>
           <li>
             Worked on poc for Ideathon Event website building. We built using
             ReactAdmin at frontend and at backend we used MongoDB which takes

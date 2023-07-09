@@ -1,5 +1,5 @@
 .layout_header{
-    height: 64px;
+    min-height: 64px;
     color: black;
 
     font-size:large;
@@ -87,12 +87,12 @@
     display: block;
     } */
     .layout_header{
-        position: fixed;
+        position: sticky;
         width: 100%;
-        
+    
     }
     .main{
-        margin-top: 100px;
+        margin-top: 20px;
     }
     .mobileHeader{
 
@@ -104,8 +104,8 @@
         grid-template-rows: 1fr repeat(6,0);
     }
     .hamber{
-        margin: 20px;
-   
+        margin: 20px 20px 20px auto;
+    
    }
    .hamber:hover{
        cursor: pointer;

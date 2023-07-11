@@ -55,17 +55,17 @@ export const soical_links:socialLinks[]=[
 ]
 
 export const skillsList=[
-    "Javascript",
-    "Typescript",
+    "JavaScript",
+    "TypeScript",
     "Python",
     "Java",
     "JQuery",
     "HTML",
     "CSS",
     "SASS",
-    "Reactjs",
-    "Nextjs",
-    "Nodejs",
+    "ReactJS",
+    "NextJS",
+    "NodeJS",
     "MySQL",
     "MongoDB",
     "Git",
@@ -73,7 +73,8 @@ export const skillsList=[
     "Azure DevOPs",
     "Docker",
     "Kubernetes",
-    "Azure"
+    "Azure",
+
 
 
 ]
